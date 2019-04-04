@@ -10,27 +10,28 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Shop</title>
 </head>
-<!--header-->
-<header>
-  <div class="container container--header">
-    <div class="contact">
-      <button class="contact_btn" aria-label="mail"><i class="far fa-envelope ico"></i> info@shopy.com</button>
-      <button class="contact_btn" aria-label="phone"><i class="fas fa-calculator ico"></i> 453-5553-996</button>
-    </div>
-    <ul class="social" aria-label="social ico">
-        <li class="social_item" aria-label="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li class="social_item" aria-label="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="social_item" aria-label="google plus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li class="social_item" aria-label="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
-    </ul>
-  </div>
-  <hr>
-</header>
-<!--/Header-->
 <body>
+  <!--header-->
+  <header>
+    <div class="container container--header">
+      <div class="contact">
+        <button class="contact_btn" aria-label="mail"><i class="far fa-envelope ico"></i> info@shopy.com</button>
+        <button class="contact_btn" aria-label="phone"><i class="fas fa-calculator ico"></i> 453-5553-996</button>
+      </div>
+      <ul class="social" aria-label="social ico">
+          <li class="social_item" aria-label="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social_item" aria-label="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="social_item" aria-label="google plus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="social_item" aria-label="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <!--/Header-->
+
   <!--navigation-->
   <section class="navigation">
     <!--container navigation-->
+    <hr>
     <div class="container container--navigation">
       <a href="#" class="navigation_logo" aria-label="logo">
         <img src="img/ico/Logo.png" alt="">
@@ -243,6 +244,7 @@
   </div>
   <!--/advertisement-->
 
+  <!--sales-->
   <section class="sales">
     <div class="container">
       <div class="section_header">
@@ -295,10 +297,74 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+  <!--/sales-->
+
+  <!--news-->
+  <div class="news">
+    <div class="container container--news">
+      <div class="news_offer">
+        <span>News Letter</span>
+        <i>join us now to get all news and special offers</i>
+      </div>
+      <form class="news_subscribe" id="subscribe_form" method="post" action="/">
+        <input class="news_mail" type="text" placeholder="type your email here" value="" name="email">
+        <input class="news_join" type="submit" value="join us" id="subscribe_submit" name="submit">
+      </form>
+    </div>
+  </div>
+  <!--/news-->
+
+  <!--footer-->
+  <footer>
+    <div class="container container--footer">
+      <div class="copyright">
+        <a href="#" class="navigation_logo" aria-label="logo">
+          <img src="img/ico/Logo.png" alt="">
+        </a>
+        <span>
+          © 2019 Shopy free PSD building by <a href="https://github.com/MALNWTI" target="_blank">MalNwTi</a>
+        </span>
+      </div>
+      <ul class="footer_ul">
+        <li class="footer_link">
+          <a href="#">about us</a>
+        </li>
+        <li class="footer_link">
+          <a href="#">contact us</a>
+        </li>
+        <li class="footer_link">
+          <a href="#">support</a>
+        </li>
+      </ul>
+      <ul class="footer_ul">
+        <li class="footer_link">
+          <a href="#">our feed</a>
+        </li>
+        <li class="footer_link">
+          <a href="#">terms and conditions</a>
+        </li>
+        <li class="footer_link">
+          <a href="#">our privacy</a>
+        </li>
+      </ul>
+      <ul class="footer_ul">
+        <li class="footer_link">
+          <a href="#">join us</a>
+        </li>
+        <li class="footer_link">
+          <a href="#">live support</a>
+        </li>
+      </ul>
+      <div class="payment">
+        <span>Payment Methods</span>
+        <img src="img/ico/Payment.png" alt="">
+      </div>
+    </div>
+  </footer>
+  <!--footer-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
