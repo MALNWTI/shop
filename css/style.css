@@ -43,7 +43,7 @@ hr{
 .container{
   width: 100%;
   padding: 0 15px;
-  max-width: 1540px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .container--header{
@@ -77,6 +77,11 @@ hr{
 }
 .container--footer{
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.container--product{
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -280,19 +285,25 @@ section{
 /*section_header close*/
 
 /*list_clothing*/
-.list_group{
+.list_top{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: all 10.3s linear;
+}
+.max_h{
+  max-height: 370px;
 }
 .list_item{
-  width: 270px;
-  height: 365px;
+  width: 23%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background: #fff;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 .list_item:hover{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -360,9 +371,25 @@ section{
   height: 60px;
   background: #fff;
 }
+.list_button:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.list_button:hover i{
+  margin-right: 10px;
+  font-size: 24px
+}
+.list_button:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.list_button:hover i{
+  margin-right: 10px;
+  font-size: 24px
+}
 .list_button i{
   color: #ff5912;
-  font-size: 50px;
+  margin-right: 5px;
+  font-size: 18px;
   font-weight: 600;
 }
 /*list_clothing close*/
@@ -529,7 +556,7 @@ section{
 
 /*news*/
 .news{
-  margin: 120px 15px;
+  margin: 100px 15px;
 }
 .news_offer{
   margin-left: 40px;
@@ -631,27 +658,97 @@ footer{
 }
 /*footer*/
 
+/*product*/
+.product{
+  margin-top: 120px;
+}
+/*product_filter*/
+.product_filter{
+  width: 23%;
+}
+.filter_title{
+  color: #ff5912;
+  font-size: 28px;
+  font-weight: 700;
+}
+.filter_categories{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 300px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.categories_bottom{
+  margin-top: 20px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.categories_bottom button{
+  color: #34404b;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.categories_bottom button:hover{
+  color: #ff5912;
+}
+.categories_bottom button:focus{
+  outline: none;
+  color: #ff5912;
+  font-weight: 800;
+}
+
+.filter_price{
+  min-height: 230px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.filter_size{
+  min-height: 300px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.filter_brands{
+  min-height: 300px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+/*product_filter close*/
+
+/*product_panel*/
+.product_panel{
+  width: 74%;
+}
+
+.product_list{
+  display: flex;
+  flex-wrap: wrap;
+  transition: none;
+}
+.product_list .list_item{
+  width: 30%;
+  min-height: 300px;
+  height: auto;
+}
+.max_he{
+  height: 900px;
+  overflow: hidden;
+}
+/*product_panel close*/
 
 /*Media*/
 @media  (max-width:1230px){
-  .list_item{
-    width: 220px;
-    height: 315px;
-  }
+
 }
 @media  (max-width:990px){
-  .list_group{
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .list_item{
-    margin: 40px;
-    width: 270px;
-    height: 365px;
-  }
+
 }
 @media (max-width:770px){
-  .list_item{
-    margin: 10px;
-  }
+
 }
