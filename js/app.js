@@ -11,7 +11,7 @@ $(function(){
     scrollOffset = $(this).scrollTop();
     checkScroll(scrollOffset);
   });
-  
+
   function checkScroll(scrollOffset){
     if (scrollOffset >= header) {
       navigation.addClass("navigation--fixed");
@@ -20,6 +20,15 @@ $(function(){
     }
   }
   //fixed header clode//
+
+  //burger menu//
+  $(".navigation_toggle").click(function() {
+    $(this).toggleClass("active");
+    $('.navigation_menu').toggleClass("focus");
+  });
+
+
+  //burger menu close//
 
   /*SLider*/
   $(".previews_slick").slick({
@@ -88,6 +97,13 @@ $(function(){
     sum = 1 + txtq;
     $(".helper-btn-text").html(sum);
   });
+  $(".cart_btn").click(function(){
+    var txt = $(".helper-btn-text").text();
+    var txtq = + txt;
+    sum = 1 + txtq;
+    $(".helper-btn-text").html(sum);
+  });
+
   //Додавання до корзини кінець//
 
 

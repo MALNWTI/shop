@@ -33,9 +33,12 @@
     <!--container navigation-->
     <hr>
     <div class="container container--navigation">
-      <a href="index.html" class="navigation_logo" aria-label="logo">
+      <a href="#" class="navigation_logo" aria-label="logo">
         <img src="img/ico/Logo.png" alt="">
       </a>
+      <div class="navigation_toggle">
+        <span class="toggle_text">Menu</span>
+      </div>
       <nav class="navigation_menu">
         <a class="menu_link" href="index.html">Home</a>
         <a class="menu_link" href="product.html">Products</a>
@@ -45,7 +48,8 @@
       </nav>
         <!--TREBA Z ZUM PORADOK ZROBUTU-->
       <div class="navigation_helper">
-        <button class="navigation_helper-btn" type="button" name="user_setting">
+        <button class="search" type="button" name="user_setting">
+          <input class="search_text" type="text" name="" value="">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
             <patch fill="ffffff" />
             <g><g transform="translate(-1229 -117)">
@@ -71,7 +75,7 @@
     <div class="container container--product">
       <div class="product_filter">
         <!--categories-->
-        <div class="filter_categories">
+        <div class="filter_categories filter">
           <div class="filter_title">
             Categories
           </div>
@@ -85,7 +89,7 @@
         <!--/categories-->
 
         <!--Price-->
-        <div class="filter_price">
+        <div class="filter_price filter">
           <div class="filter_title">
             Price Filtter
           </div>
@@ -101,17 +105,21 @@
               </div>
             </div>
             <div class="price_change">
-              <span>From</span>
-              <input type="number">
-              <span>To</span>
-              <input type="number">
+              <div class="price_wrapper">
+                <span>From</span>
+                <input type="number">
+              </div>
+              <div class="price_wrapper">
+                <span>To</span>
+                <input type="number">
+              </div>
             </div>
           </div>
         </div>
         <!--/Price-->
 
         <!--Size-->
-        <div class="filter_size">
+        <div class="filter_size filter">
           <div class="filter_title">
             Sizes
           </div>
@@ -137,7 +145,7 @@
         <!--/Size-->
 
         <!--Brands-->
-        <div class="filter_brands">
+        <div class="filter_brands filter">
           <div class="filter_title">
             Brands
           </div>
